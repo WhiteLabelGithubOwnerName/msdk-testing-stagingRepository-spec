@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "PostFinanceCheckoutSdk"
-  s.module_name  = "PostFinanceCheckoutSdk"
+  s.name         = "WalleeTest"
+  s.module_name  = "WalleeTest"
   s.version      = "3.0.0"
   s.summary      = "Official PostFinance Checkout SDK to access different payment methods."
   s.license      = { :type => 'Apache License, Version 2.0', :file => 'LICENSE'}

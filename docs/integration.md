@@ -1,7 +1,7 @@
 # Integration
 
 - [Integration](#integration)
-  - [Set up PostFinance Checkout](#set-up-walleetestsdk)
+  - [Set up WalleeTest Checkout](#set-up-walleetestsdk)
   - [Create transaction](#create-transaction)
   - [Collect payment details](#collect-payment-details)
     - [Basic usage Swift (Storyboard)](#basic-usage-swift-storyboard)
@@ -10,13 +10,13 @@
     - [Additional integration steps](#additional-integration-steps)
   - [Verify payment](#verify-payment)
 
-## Set up PostFinance Checkout
+## Set up WalleeTest Checkout
 
-To use the iOS Payment SDK, you need a [PostFinance Checkout account](https://checkout.postfinance.ch/user/signup). After signing up, set up your space and enable the payment methods you would like to support.
+To use the iOS Payment SDK, you need a [WalleeTest Checkout account](https://checkout.postfinance.ch/user/signup). After signing up, set up your space and enable the payment methods you would like to support.
 
 ## Create transaction
 
-For security reasons, your app cannot create transactions and fetch access tokens. This has to be done on your server by talking to the [PostFinance Checkout Web Service API](https://checkout.postfinance.ch/en-us/doc/api/web-service). You can use one of the official SDK libraries to make these calls.
+For security reasons, your app cannot create transactions and fetch access tokens. This has to be done on your server by talking to the [WalleeTest Checkout Web Service API](https://checkout.postfinance.ch/en-us/doc/api/web-service). You can use one of the official SDK libraries to make these calls.
 
 To use the iOS Payment SDK to collect payments, an endpoint needs to be added on your server that creates a transaction by calling the [create transaction](https://checkout.postfinance.ch/doc/api/web-service#transaction-service--create) API endpoint. A transaction holds information about the customer and the line items and tracks charge attempts and the payment state.
 
@@ -124,7 +124,7 @@ The response object contains these properties:
 | `COMPLETED` | The payment was successful. |
 | `FAILED` | The payment failed. Check the `message` for more information. |
 | `CANCELED` | The customer canceled the payment. |
-| `PENDING` | The customer has aborted the payment process, so the payment is in a temporarily pending state. It will eventually reach a final status (successful or failed), but it may take a while. Wait for a webhook notification and use the PostFinance Checkout API to retrieve the status of the transaction and inform the customer that the payment is pending. |
+| `PENDING` | The customer has aborted the payment process, so the payment is in a temporarily pending state. It will eventually reach a final status (successful or failed), but it may take a while. Wait for a webhook notification and use the WalleeTest Checkout API to retrieve the status of the transaction and inform the customer that the payment is pending. |
 | `TIMEOUT` | Token for this transaction expired. App will be closed and third-party app will get this message. For opening payment sdk third party app have to refetch token |
 
 - `message` providing a localized error message that can be shown to the customer.
