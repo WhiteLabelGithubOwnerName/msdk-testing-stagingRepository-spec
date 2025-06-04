@@ -30,7 +30,7 @@ target 'DemoApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod ‘WalleeTestSdk’, '3.1.2'
+  pod ‘WalleeTestSdk’, '3.2.0'
 
   target 'DemoAppTests' do
     inherit! :search_paths
@@ -41,19 +41,19 @@ end
 
 #### From GitHub repository
 
-`pod 'WalleeTestSdk', '3.1.2', :source=> 'https://github.com/WhiteLabelGithubOwnerName/msdk-testing-stagingRepository.git'`
+`pod 'WalleeTestSdk', '3.2.0', :source=> 'https://github.com/WhiteLabelGithubOwnerName/msdk-testing-stagingRepository.git'`
 
 and
 
-`pod 'PaymentResources', '7.0.0'`
+`pod 'PaymentResources', '6.0.0'`
 
 ```sh
 target 'DemoApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'WalleeTestSdk', '3.1.2', :source => 'https://github.com/WhiteLabelGithubOwnerName/msdk-testing-stagingRepository.git'
-  pod 'PaymentResources', '7.0.0'
+  pod 'WalleeTestSdk', '3.2.0', :source => 'https://github.com/WhiteLabelGithubOwnerName/msdk-testing-stagingRepository.git'
+  pod 'PaymentResources', '6.0.0'
 
   target 'DemoAppTests' do
     inherit! :search_paths
