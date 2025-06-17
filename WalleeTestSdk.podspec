@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "WalleeTestSdk"
   s.module_name  = "WalleeTestSdk"
-  s.version      = "900.3.0"
+  s.version      = "900.4.0"
   s.summary      = "Official PostFinance Checkout SDK to access different payment methods."
   s.license      = { :type => 'Apache License, Version 2.0', :file => 'LICENSE'}
   s.author       = "wallee AG"
   s.homepage     = "https://github.com/WhiteLabelGithubOwnerName/msdk-testing-stagingRepository"
-  s.source       = { :git => "https://github.com/WhiteLabelGithubOwnerName/msdk-testing-stagingRepository.git", :tag => "900.3.0" }
+  s.source       = { :git => "https://github.com/WhiteLabelGithubOwnerName/msdk-testing-stagingRepository.git", :tag => "900.4.0" }
   s.vendored_frameworks = "WalleeTestSdk.xcframework"
   s.resource_bundles = { "WalleeTest" => "walleetestsdkbundle.jsbundle" }
   s.platform = :ios
